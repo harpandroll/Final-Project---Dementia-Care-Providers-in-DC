@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+<head>S
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,22 +8,44 @@
     <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
     <script defer src="script.js"></script>
     <link rel="stylesheet" href="./style.css">
+    <link href='https://fonts.googleapis.com/css?family=Libre Bodoni' rel='stylesheet'>
 </head>
 <body>
- 
-    <header>
-        <h1 id = "pageTitle"> Find Dementia Care Providers in Washington, D.C. </h1>
-        <h1 id = "pageSubtitle"> Enter Ward Number (Valid entries are 1 - 8) </h1>
-        <input id="textInput" type="text" placeholder="Enter Ward Here" />
+    <!--body {text-align: center;}-->
+    <h1 id = "pageTitle" style="text-align: center;"> Find Dementia Care Providers in Washington, D.C. </h1>
+    <div class = "headerPhotos" >
+                    <img 
+            src= "iStock-1202289728.jpg"
+            />
+        <img 
+            src ="iStock-1047536650.jpg" 
+            />   
+        </div>
+   <!--<header> -->
+ <div class = "requestProviders">
+    <h2 id = "pageSubtitle" style ="text-align: center;"> Enter Ward Number </h2>
+    <h3 id = "pageSubtitle" style ="text-align: center;"> (Valid entries are 1 - 8) </h3>
+    <input id="textInput" type="text" placeholder="Enter Ward # Here" />
         <button id="submitButton"> Click Here </button>
-    </header>
-   <div id = "providersinDC">
-        <h2 id = "organizationName"> Organization Name</h2>
-        <h2 id = "categoriesofServices"> Services Provided</h2>
-        <h2 id = "phoneNumber">Organization Phone #</h2>
-        <h2 id = "address_full"> Full Address of Org</h2>
-        <h2 id = "webSite"> Website Address</h2>
-        <h2 id = "servicesProvidedfor"> Eligible Recipients</h2>
-  </div>   
+   </div>
+<!--
+<ul class = "providersHeadings">
+    <li> Organization Name</li>
+    <li> Services Provided</li>
+    <li>  Organization Phone #</li>
+    <li> Full Address of Org</li>
+    <li>  Website Address</li>
+    <li> Eligible Recipients</li>
+</ul>
+-->
+<ul class = "providers">
+    <li id=  "organizationName"></li>
+    <li id = "categoriesofServices"></li>
+    <li id = "phoneNumber"></li>
+    <li id = "address_full"></li>
+    <li id = "webSite"> </li>
+    <li id = "servicesProvidedfor"></li>
+</ul>
+
 </body>
 </html>

@@ -1,0 +1,61 @@
+html {
+    background-color: #84ceeb;
+   // font-family: trebuchet, geneva, sans-serif;
+    font-family: 'Libre Bodoni';
+  }
+
+ul {
+    list-style: none;
+}
+
+.headerPhotos {
+    display: flex;
+    justify-content: center;
+    flex-direction: row
+}
+
+.headerPhotos img {
+    flex-wrap: wrap;
+  //  justify-content: center;
+    width: 400px;
+
+}
+
+/*.pageTitle {
+    text-align: center;
+}*/
+
+/*.providersHeadings {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    font-weight: bold;
+    gap:10px;
+ 
+}
+*/
+
+.requestProviders {
+    text-align: center;
+    margin: auto;
+}
+
+.providers {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 10px;
+}   
+/*
+button {
+    display: block;
+    margin: 0 auto;
+}
+
+input {
+    display:block;
+    text-align:center;
+    margin: 10 auto;
+}
+*/
